@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventLitez - Vibrant Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <h1>🎉 Event<span>Litez</span></h1>
+            <a href="#eventForm" class="cta">Create Event</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-content">
+            <h1>Make Every Event Memorable</h1>
+            <p>Plan, manage, and display your events effortlessly. Your next big gathering starts here!</p>
+            <a href="#events" class="btn-large">Explore Events</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Create Event Section -->
+        <section id="eventForm" class="create-event">
+            <h2>Create Your Event</h2>
+            <form>
+                <input type="text" id="eventName" placeholder="Enter Event Name" required>
+                <input type="date" id="eventDate" required>
+                <input type="time" id="eventTime" required>
+                <input type="text" id="eventLocation" placeholder="Enter Location" required>
+                <button type="submit" class="btn">Add Event</button>
+            </form>
+        </section>
+
+        <!-- Event List Section -->
+        <section id="events" class="event-list">
+            <h2>Upcoming Events</h2>
+            <div id="eventCards" class="cards">
+                <!-- Event cards will dynamically appear here -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
